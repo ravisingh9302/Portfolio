@@ -14,13 +14,16 @@ const Project = () => {
       <div className=" h-full w-full max-w-full flex flex-row flex-wrap justify-center md:flex-row gap-6 px-6">
 
         {ImpProjects?.map((data, index) => (
-          <Projectcard
-            preview={data?.preview}
-            sourcecode={data?.sourcecode}
-            src={data?.src}
-            title={data?.title}
-            description={data?.description}
-          />
+          <div key={"ravi"+index}>
+
+            <Projectcard
+              preview={data?.preview}
+              sourcecode={data?.sourcecode}
+              src={data?.src}
+              title={data?.title}
+              description={data?.description}
+            />
+          </div>
         ))}
       </div>
     </div>
