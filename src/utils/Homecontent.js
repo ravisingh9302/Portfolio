@@ -30,7 +30,7 @@ export const FrontendSkill = [
     },
     {
         skill_name: "Bootstraps",
-        Image:"/images/Bootstrap.png",
+        Image:"/images/Bootstraps.png",
         width: 80,
         height: 80,
         discription: "CSS Framework for developing responsive websites."

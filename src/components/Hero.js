@@ -8,7 +8,7 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
-                className=" rotate-180 absolute opacity-40  h-full w-full left-0 z-[0]  "
+                className=" rotate-180 absolute opacity-40  h-full w-full left-0   "
             >
                 <source src="https://res.cloudinary.com/dgo0fkgwh/video/upload/v1718641052/earthnew2c_gojvi5.mp4" type="video/mp4" />
             </video>

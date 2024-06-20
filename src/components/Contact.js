@@ -30,9 +30,11 @@ export default function Contact() {
 
             <div className="">
                 <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md" id="contactus">
-                    <h1 className="text-[40px] font-semibold flex justify-center text-transparent   bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-5">
-                        Contact Us
-                    </h1>
+                    <div className=" flex justify-center">
+                        <h1 className="  text-[40px] font-semibold   text-transparent   bg-clip-text bg-myGradientBg py-5">
+                            Contact Us
+                        </h1>
+                    </div>
                     <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
                         We’re Here to Help you.
                     </p>

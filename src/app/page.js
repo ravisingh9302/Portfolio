@@ -9,6 +9,11 @@ import { Widget } from "iframewidget";
 export default function Home() {
   let options = {
     chatareabgcolor: "#00000000",
+    chatIconRight: '20px',
+    chatIconBottom: '50px',
+    chatIconbgColor: "#4b2dba",
+    titlebgcolor: "#720eff",
+    inputBgcolor: "#720eff",
   }
   return (
     <main className="h-full w-full">

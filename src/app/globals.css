@@ -38,10 +38,10 @@ body {
 .Welcome-text {
   background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.741),
+      rgba(255, 255, 255, 0.214)
     ),
-    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+    linear-gradient(90.01deg, #931ee1 0.01%, #b380ff 50.01%, #014fc4 100%);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
@@ -65,19 +65,19 @@ body {
 .button-primary {
   background: linear-gradient(
       180deg,
-      rgba(10, 47, 215, 0) 0%,
-      rgba(10, 47, 215, 0.32) 100%
+      #931ee176 0%,
+      #014fc4ec 100%
     ),
-    rgba(74, 26, 248, 0.12);
+    rgba(72, 21, 255, 0.315);
   box-shadow: inset 0 0 12px #0331ff5f;
 }
 .button-primary:hover {
   background: linear-gradient(
       180deg,
-      rgba(10, 47, 215, 0) 0%,
-      rgba(10, 47, 215, 0.55) 100%
+      #931ee1f7 0%,
+      #014fc461 100%
     ),
-    rgba(74, 26, 248, 0.36);
+    rgb(115, 77, 255);
   box-shadow: inset 0 0 12px #0331ff5f;
 }
 
@@ -92,4 +92,11 @@ body {
   border-radius: 100px;
   /* border: solid 3px #e5e5e5; */
   /* box-shadow: inset 0 0 3px #999; */
+}
+
+.myborder{
+  /* border-image: linear-gradient(to right, #8111cc, #4e3eff) 4; */
+  border-image: linear-gradient(to right, #931ee1, #257cfff4) 4;
+  border-image: linear-gradient(to right, #4b2dba, #257cfff4) 4;
+  
 }

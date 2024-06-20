@@ -2,7 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft,slideInFromRight,slideInFromTop } from "@/utils/Motion";
+import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/Motion";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import Image from "next/image";
 
@@ -11,19 +11,20 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className=" overflow-hidden flex  flex-col-reverse lg:flex-row items-center  justify-center px-4 lg:px-10 h-full w-full z-[20]"
+
+      className=" overflow-hidden flex   z-[2] flex-col-reverse lg:flex-row items-center  justify-center px-4 lg:px-10 h-full w-full "
     >
       <div className=" lg:my-6 h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] mx-auto inline-block lg:flex lg:mx-0   mt-2 border border-[#7042f88b] opacity-[0.9]"
         >
-          
-          <HiOutlineSparkles className="text-[#b49bff] mr-[10px] h-5 w-5"/>
-            <h1 className="Welcome-text text-[13px]">
-              Fullstack Developer Portfolio
-            </h1>
-          
+
+          <HiOutlineSparkles className="text-[#6b5eff] mr-[10px] h-5 w-5" />
+          <h1 className="Welcome-text text-[13px]">
+            Fullstack Developer Portfolio
+          </h1>
+
 
         </motion.div>
 
@@ -32,11 +33,13 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[650px] w-auto h-auto"
         >
 
-          <span className=" flex flex-col justify-center">
-            <span className=" flex bg-gradient-to-r from-blue-500 via-blue-800  justify-center lg:justify-start text-4xl lg:text-6xl to-blue-300  text-transparent bg-clip-text">
-              Hello, I&apos;m{" "}
-            </span>
-            <br></br>
+          <div className=" flex flex-col gap-9 justify-center">
+            <div className=" w-auto   justify-center lg:justify-start text-4xl lg:text-6xl inline text-transparent bg-clip-text">
+              <div className=" inline bg-myGradientBg  text-transparent bg-clip-text">
+                Hello, I&apos;m{" "}
+              </div>
+            </div>
+            {/* <br></br> */}
 
             <TypeAnimation
               sequence={[
@@ -52,9 +55,9 @@ const HeroContent = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="flex justify-center text-white lg:justify-start text-4xl lg:text-6xl"
+              className="flex  justify-center text-white lg:justify-start text-4xl lg:text-6xl"
             />
-          </span>
+          </div>
 
 
         </motion.div>
@@ -95,8 +98,9 @@ const HeroContent = () => {
           width={550}
         /> */}
 
+        {/* z-30 */}
         <Image
-          className="border-2 border-[#191D4D] rounded-full z-30 h-auto w-auto"
+          className="border-2 border-[#4c2dba3f] rounded-full  h-auto w-auto"
           src="/images/ravi.png"
           alt="work icons"
           height={300}

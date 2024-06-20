@@ -8,7 +8,7 @@ const Project = () => {
       className=" flex flex-col items-center justify-center "
       id="projects"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-myGradientBg py-20">
         My Projects
       </h1>
       <div className=" h-full w-full max-w-full flex flex-row flex-wrap justify-center md:flex-row gap-6 px-6">

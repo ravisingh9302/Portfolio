@@ -7,9 +7,9 @@ import { MdRemoveRedEye } from "react-icons/md";
 
 const Projectcard = ({ src, title, description,sourcecode,preview}) => {
   return (
-    <div className="border border-[#2A0E61] min-w-60 max-w-md rounded-lg shadow-lg overflow-hidden " key={title}>
+    <div className="border border-[#5C4FE8] min-h-96 max-w-md rounded-lg shadow-lg overflow-hidden " key={title}>
       
-      <div className=" relative group  bg-white z-20" key={src}>
+      <div className=" relative group " key={src}>
         <Image
           src={src}
           alt={title}
@@ -40,7 +40,7 @@ const Projectcard = ({ src, title, description,sourcecode,preview}) => {
 
       <div className="relative p-4">
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-400  text-justify max-h-52 min text-pretty" >{description}</p>
+        <p className="mt-2 text-gray-400  text-justify min-h-40 max-h-40 min text-pretty" >{description}</p>
       </div>
     </div>
   );
