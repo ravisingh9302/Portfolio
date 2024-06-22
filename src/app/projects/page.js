@@ -6,8 +6,8 @@ function page() {
     return (
         <>
             <div
-                className=" flex flex-col items-center justify-center py-20"
-                id="projects"
+                className=" flex flex-col items-center justify-center py-20 "
+            
             >
                 <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-myGradientBg py-20">
                     My Projects

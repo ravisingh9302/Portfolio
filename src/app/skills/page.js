@@ -10,7 +10,7 @@ function page() {
             </Head> */}
             <div
                 className=" flex flex-col items-center justify-center py-20"
-                id="projects"
+            
             >
 
                 <div className=" lg:w-[1160px] md:w-[760px] mx-auto">

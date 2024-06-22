@@ -28,20 +28,20 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin rounded-full border border-gray-900 h-auto w-auto"
           />
 
-          <span className="font-bold ml-[10px]   text-gray-300">
+          <span className="font-bold ml-[10px] text-xl  text-gray-400">
             Ravi shankar singh
           </span>
         </Link>
 
         {/* HUBERGER BTN */}
-        <button onClick={toggleMenu} type="button" className="lg:hidden inline-flex  items-center p-2 w-10 h-10 justify-center  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <button onClick={toggleMenu} type="button" className="border myborder lg:hidden flex items-center p-1 w-10 h-10 justify-center  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
           {/* <span class="sr-only">Open main menu</span> */}
-          <VscThreeBars className="text-4xl" />
+          <VscThreeBars className="text-5xl font-bold" />
         </button>
 
         {/* MENUS */}
         <div id="navbar-default" className={` absolute top-16 lg:static  w-full lg:w-[500px] h-fit lg:h-full  ${toggle ? 'flex' : 'hidden'} lg:flex lg:flex-row items-center lg:justify-between  justify-center`}>
-          <div className="flex gap-2 lg:gap-0 flex-col lg:flex-row items-center lg:justify-between w-1/2 bg-slate-900 lg:w-full h-auto border border-[#3943ff97] lg:border-[#7042f861] lg:bg-[#0300145e]  px-[20px] py-[10px] lg:rounded-full text-gray-200">
+          <div className="flex gap-2 lg:gap-0 flex-col lg:flex-row items-center lg:justify-between w-1/2 bg-slate-900 lg:w-full h-auto border sm:myborder lg:border-[#7042f861] lg:bg-[#0300145e]  px-[20px] py-[10px] lg:rounded-full text-gray-200">
             <Link
               href="/"
               className={`cursor-pointer px-2 rounded-full  ${pathname === "/"

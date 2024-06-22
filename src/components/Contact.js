@@ -1,26 +1,34 @@
 "use client"
+import toast, { Toaster } from 'react-hot-toast';
 export default function Contact() {
-
+    const onSuccess = () => toast.success('Sent Successfully.');
+    const onfaild = () => toast('Message not Sent.');
     async function handleSubmit(e) {
         e.preventDefault();
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
-            body: JSON.stringify({
-                access_key: process.env.NEXT_PUBLIC_TOKEN_WEBFORM,
-                email: e.target.email.value,
-                mobile: e.target.mobile.value,
-                name: e.target.name.value,
-                message: e.target.message.value,
-            }),
-        });
-        const result = await response.json();
-        console.log("Contact response", result)
-        if (result.success) {
-            console.log(result);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: process.env.NEXT_PUBLIC_TOKEN_WEBFORM,
+                    email: e.target.email.value,
+                    mobile: e.target.mobile.value,
+                    name: e.target.name.value,
+                    message: e.target.message.value,
+                }),
+            });
+            const result = await response.json();
+            console.log("Contact response", result)
+            if (result.success) {
+                console.log(result);
+
+                onSuccess()
+            }
+        } catch (error) {
+            onfaild()
         }
     }
 
@@ -29,6 +37,10 @@ export default function Contact() {
 
 
             <div className="">
+                <Toaster
+                    position="top-center"
+                    reverseOrder={false}
+                />
                 <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md" id="contactus">
                     <div className=" flex justify-center">
                         <h1 className="  text-[40px] font-semibold   text-transparent   bg-clip-text bg-myGradientBg py-5">

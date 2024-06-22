@@ -3,7 +3,7 @@ import HeroContent from "./Herocontent";
 
 const Hero = () => {
     return (
-        <div className=" relative flex flex-col justify-center mt-20 min-h-[700px]  lg:min-h-[580px] h-full w-full max-w-full " id="about-me">
+        <div className=" relative flex flex-col justify-center mt-20 min-h-[700px]  lg:min-h-[620px] h-full w-full max-w-full " id="about-me">
             <video
                 autoPlay
                 muted

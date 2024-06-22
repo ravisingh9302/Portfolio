@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
       
       {/* SOCIAL LOGOS */}
-      <div className="fixed bg-black  align-middle items-center lg:hidden bottom-0 left-0 right-0 justify-around h-10   flex flex-row gap-5  w-full ">
+      <div className="fixed bg-black border myborder  align-middle items-center lg:hidden bottom-0 left-0 right-0 justify-around h-10   flex flex-row gap-5  w-full ">
         {Socials.map((social, index) => (
           <div className=" min-h-8 min-w-8 max-h-8 max-w-8" key={`footer${social.name}`}>
             <Link href={social.link} target="_blank" legacyBehavior  aria-label="sociallinkfooter" >

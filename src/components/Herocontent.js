@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/Motion";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -12,7 +13,7 @@ const HeroContent = () => {
       initial="hidden"
       animate="visible"
 
-      className=" overflow-hidden flex   z-[2] flex-col-reverse lg:flex-row items-center  justify-center px-4 lg:px-10 h-full w-full "
+      className=" overflow-hidden flex   z-[2] flex-col-reverse lg:flex-row items-center  justify-center px-4 lg:px-11 h-full w-full "
     >
       <div className=" lg:my-6 h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -34,7 +35,7 @@ const HeroContent = () => {
         >
 
           <div className=" flex flex-col gap-9 justify-center">
-            <div className=" w-auto   justify-center lg:justify-start text-4xl lg:text-6xl inline text-transparent bg-clip-text">
+            <div className=" w-auto  text-4xl lg:text-6xl flex justify-center lg:justify-start">
               <div className=" inline bg-myGradientBg  text-transparent bg-clip-text">
                 Hello, I&apos;m{" "}
               </div>
@@ -71,18 +72,22 @@ const HeroContent = () => {
         </motion.p>
 
         <div className="flex flex-row  gap-10 w-full flex-grow justify-center lg:justify-start ">
-          <motion.a
+          <motion.div
             variants={slideInFromLeft(1)}
             className="py-4 px-6 button-primary text-center text-white cursor-pointer  text-lg rounded-lg max-w-[200px]"
           >
-            Hire Me
-          </motion.a>
-          <motion.a
+            <Link href={'/#contactus'}>
+              Hire Me
+            </Link>
+          </motion.div>
+          <motion.div
             variants={slideInFromLeft(1)}
             className="py-4 px-6 button-primary text-center text-white cursor-pointer  text-lg rounded-lg max-w-[200px]"
           >
-            Download CV
-          </motion.a>
+            <Link href={'/images/ravi_resume.pdf'}>
+              Download CV
+            </Link>
+          </motion.div>
         </div>
       </div>
 
