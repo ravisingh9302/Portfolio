@@ -99,7 +99,7 @@ function page() {
                             </p>
                         </div>
 
-                        {FrontendLang.map((item, index) => (
+                        {Tools.map((item, index) => (
                             <div
                                 className=" flex flex-col lg:flex-row gap-2 items-center shadow-myshx shadow-[#713AE4]"
                                 key={item.Image}
