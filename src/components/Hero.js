@@ -10,7 +10,7 @@ const Hero = () => {
                 loop
                 className=" rotate-180 absolute opacity-40  h-full w-full left-0   "
             >
-                <source src="https://res.cloudinary.com/dgo0fkgwh/video/upload/v1718641052/earthnew2c_gojvi5.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dgo0fkgwh/video/upload/v1718641052/portfolio/earthnew2c_gojvi5.mp4" type="video/mp4" />
             </video>
             <HeroContent />
         </div>
